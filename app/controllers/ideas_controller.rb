@@ -21,7 +21,7 @@ class IdeasController < ApplicationController
   end
 
   def index
-    @ideas = Idea.all.order(Created_at: :desc)
+    @ideas = Idea.all.order(created_at: :desc)
   end
 
   def edit
@@ -29,6 +29,7 @@ class IdeasController < ApplicationController
 
   def update
     if @idea.update idea_params
+      flash[:success] = "Idea Updated Successfully!"
       redirect_to (idea_path(@idea))
     else
       rnder :edit
@@ -46,6 +47,6 @@ class IdeasController < ApplicationController
   end
 
   def authorize_user!
-    redirect_to root_path, alert: "Access Denied: That Post Isn't Yours!" unless can? :crud, @post
+    redirect_to root_path, alert: "Access Denied: That Post Isn't Yours!" unless can? :crud, @idea
   end
 end

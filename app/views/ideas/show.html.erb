@@ -1,1 +1,20 @@
-<h1>I'm the SHOW IDEA page</h1>
+<div class="jumbo-box">
+  <div class="jumbotron">
+    <div class="container">
+      <h3 class="text-info"><%= @idea.title %></h3>
+      <p class="lead"><%= @idea.description %></p>
+      <hr class="my-4">
+      <small class="text-muted">
+        Posted by <span class="text-info"><%= @idea.user&.name || '--deleted--' %></span>
+        <%= time_ago_in_words(@idea.created_at) %> ago
+      </small>
+      <% if can? :crud, @idea %>
+        <div>
+          <%= link_to "Edit", edit_idea_path(@idea.id), class: "btn btn-outline-info" %>
+          <%= link_to "Delete", idea_path(@idea.id), method: :delete, class: "btn btn-outline-info", data: { confirm: "Are you sure you want to delete your idea?" } %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+ 

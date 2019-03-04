@@ -1,15 +1,49 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>CoolIdeas</title>
+    <title>Cool Ideas!</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
   </head>
-
+  
   <body>
-    <%= yield %>
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-dark bg-info">
+        <span class="text-white"><%= link_to image_tag("idea.png"), root_path, class: "navbar-brand nav-logo" %>&nbsp The Idea Factory</span>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="nav-container">
+              <%= link_to "Ideas", root_path, class: "nav-item nav-link form-inline btn btn-secondary nav-btn-spacer" %>
+              <%= link_to "New Idea!", new_idea_path, class: "nav-item nav-link form-inline btn btn-secondary nav-btn-spacer" %>
+              <% if user_signed_in? %>
+                <%= link_to "Sign Out", session_path, method: :delete, data: { confirm: "Are You Sure You Want to Sign Out?" }, class: "nav-item nav-link form-inline btn btn-secondary nav-btn-spacer" %>
+                <span class="navspan text-white"> Hello,&nbsp <%= link_to "#{current_user.name}", edit_user_path(current_user.id), class: "text-white font-weight-bold" %>!</span>
+              <% else %>
+                <%= link_to "Sign In", new_session_path, class: "nav-item nav-link form-inline btn btn-secondary nav-btn-spacer" %> 
+                <%= link_to "Sign Up", new_user_path, class: "nav-item nav-link form-inline btn btn-secondary nav-btn-spacer" %>
+              <% end %>
+          </div>
+        </div>
+      </nav>
+      <div class="alert-box">
+        <% flash.each do |type, message| %>
+          <div class="<%= flash_class(type) %> alert-dismissible fade show" role="alert">
+            <%= message %>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        <% end %>
+      </div>
+    </header>
+
+    <main>
+      <%= yield %>
+    </main> 
   </body>
 </html>

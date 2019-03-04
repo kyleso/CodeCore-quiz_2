@@ -1,1 +1,14 @@
-<h1>I'm the INDEX page</h1>
+<div class="jumbo-box">
+<% @ideas.each do |idea| %>
+  <div class="jumbotron">
+    <div class="container">
+      <h3><%= link_to idea.title, idea_path(idea.id), class: "text-info" %></h3>
+      <p class="lead"><%= idea.description %></p>
+      <hr class="my-4">
+      <small class="text-muted">
+        Posted by <span class="text-info"><%= idea.user&.name || '--deleted--' %></span>
+        <%= time_ago_in_words(idea.created_at) %> ago
+      </small>
+    </div>
+  </div>
+<% end %>
