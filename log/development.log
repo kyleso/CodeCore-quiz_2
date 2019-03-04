@@ -159,3 +159,311 @@ Processing by IdeasController#new as HTML
 Completed 200 OK in 2235ms (Views: 2222.6ms | ActiveRecord: 3.8ms)
 
 
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kyle/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[36mIdea Load (0.4ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mIdea Create (0.5ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Not understanding that you're a horrible person doesn't make you less of a horrible person"], ["description", "Libero minima mollitia. Quo dolores magni. Temporibus aut eum."], ["created_at", "2018-05-01 00:00:00"], ["updated_at", "2018-05-01 00:00:00"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mIdea Create (0.2ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Dead on the inside, dead on the outside"], ["description", "Et minus recusandae. Eaque enim sint. Cupiditate dolores commodi."], ["created_at", "2017-05-01 00:00:00"], ["updated_at", "2017-05-01 00:00:00"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mIdea Create (0.2ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "You know what the problem is with everybody? They all just want to hear what they already believe. No one ever wants to hear the truth"], ["description", "Inventore pariatur ut. Corrupti fugiat non. Voluptatem modi iste."], ["created_at", "2017-09-05 00:00:00"], ["updated_at", "2017-09-05 00:00:00"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mIdea Create (0.2ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "I do love you, by the way. I mean as much as I'm capable of loving anyone"], ["description", "Minima ullam sed. Necessitatibus et nisi. Earum error molestiae."], ["created_at", "2018-04-14 00:00:00"], ["updated_at", "2018-04-14 00:00:00"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mIdea Create (0.2ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Beer before liquor, never sicker, liquor before beer, never fear, don't do heroin"], ["description", "Et quae quibusdam. Dolorum voluptatum voluptatibus. Et dolore libero."], ["created_at", "2017-04-15 00:00:00"], ["updated_at", "2017-04-15 00:00:00"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mIdea Create (0.2ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Beer before liquor, never sicker, liquor before beer, never fear, don't do heroin"], ["description", "Consequatur omnis quibusdam. Perferendis corrupti illum. Ut dolorem fuga."], ["created_at", "2017-03-13 00:00:00"], ["updated_at", "2017-03-13 00:00:00"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mIdea Create (0.2ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Dead on the inside, dead on the outside"], ["description", "Magnam eligendi saepe. Est impedit aut. Aut aspernatur enim."], ["created_at", "2018-10-05 00:00:00"], ["updated_at", "2018-10-05 00:00:00"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mIdea Create (0.2ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Dead on the inside, dead on the outside"], ["description", "Quae numquam dolorem. Fuga eum sunt. Quia blanditiis cumque."], ["created_at", "2017-06-25 00:00:00"], ["updated_at", "2017-06-25 00:00:00"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mIdea Create (0.2ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "You know what the problem is with everybody? They all just want to hear what they already believe. No one ever wants to hear the truth"], ["description", "Sunt dolor qui. Quo sit quia. Voluptas ipsam commodi."], ["created_at", "2018-02-18 00:00:00"], ["updated_at", "2018-02-18 00:00:00"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mIdea Create (0.2ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "For a lot of people, life is just one long, hard kick in the urethra"], ["description", "Delectus omnis laudantium. Vero eum omnis. Harum eius magnam."], ["created_at", "2017-11-19 00:00:00"], ["updated_at", "2017-11-19 00:00:00"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mIdea Create (0.2ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "You know what the problem is with everybody? They all just want to hear what they already believe. No one ever wants to hear the truth"], ["description", "Aut est laudantium. Aspernatur eos vitae. Distinctio est laborum."], ["created_at", "2018-02-27 00:00:00"], ["updated_at", "2018-02-27 00:00:00"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mIdea Create (0.2ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "If you care about what other people think, you're never gonna do anything"], ["description", "Sapiente veritatis est. Assumenda sint et. Natus est ea."], ["created_at", "2017-11-19 00:00:00"], ["updated_at", "2017-11-19 00:00:00"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mIdea Create (0.2ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "You know what the problem is with everybody? They all just want to hear what they already believe. No one ever wants to hear the truth"], ["description", "Eos est necessitatibus. Laboriosam consequatur corrupti. Atque quam sint."], ["created_at", "2018-08-03 00:00:00"], ["updated_at", "2018-08-03 00:00:00"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mIdea Create (0.2ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "That's the problem with life, either you know what you want and you don't get what you want, or you get what you want and then you don't know what you want"], ["description", "Eligendi ut tempora. Perspiciatis voluptatum deleniti. Explicabo ipsum omnis."], ["created_at", "2018-01-13 00:00:00"], ["updated_at", "2018-01-13 00:00:00"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mIdea Create (0.2ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Yes, I ate all the muffins, because I have no self-control and I hate myself"], ["description", "Accusamus sint a. Molestiae consequuntur sed. Aut labore aut."], ["created_at", "2017-11-17 00:00:00"], ["updated_at", "2017-11-17 00:00:00"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mIdea Create (0.2ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "If you care about what other people think, you're never gonna do anything"], ["description", "Nam optio aut. Eaque nostrum vitae. Quisquam delectus officiis."], ["created_at", "2017-10-03 00:00:00"], ["updated_at", "2017-10-03 00:00:00"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mIdea Create (0.2ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Ow, crap. I hate this. Running is terrible. Everything is the worst"], ["description", "Id dolores ut. Magni architecto voluptatem. Dolores quo eum."], ["created_at", "2019-01-01 00:00:00"], ["updated_at", "2019-01-01 00:00:00"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mIdea Create (0.3ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Spaghetti or not, here I come"], ["description", "Exercitationem deleniti nihil. Reiciendis quisquam possimus. Quos est quae."], ["created_at", "2018-05-18 00:00:00"], ["updated_at", "2018-05-18 00:00:00"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mIdea Create (0.2ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Spaghetti or not, here I come"], ["description", "Soluta sit non. Aut ipsum deleniti. Eligendi fugit rerum."], ["created_at", "2018-07-18 00:00:00"], ["updated_at", "2018-07-18 00:00:00"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mIdea Create (0.2ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Not understanding that you're a horrible person doesn't make you less of a horrible person"], ["description", "Aperiam deserunt repellendus. Et illum debitis. Est dignissimos similique."], ["created_at", "2018-03-10 00:00:00"], ["updated_at", "2018-03-10 00:00:00"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mIdea Create (0.2ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "The universe is a cruel, uncaring void. The key to being happy isn't a search for meaning. It's to just keep yourself busy with unimportant nonsense, and eventually, you'll be dead"], ["description", "Tempora voluptas ipsam. Tempore reprehenderit qui. Nihil eaque alias."], ["created_at", "2019-01-10 00:00:00"], ["updated_at", "2019-01-10 00:00:00"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mIdea Create (0.2ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Ow, crap. I hate this. Running is terrible. Everything is the worst"], ["description", "Adipisci quisquam voluptatum. Quia mollitia qui. Sint voluptatem nihil."], ["created_at", "2017-11-11 00:00:00"], ["updated_at", "2017-11-11 00:00:00"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mIdea Create (0.2ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "That's the problem with life, either you know what you want and you don't get what you want, or you get what you want and then you don't know what you want"], ["description", "Quo ut nisi. Aperiam odio esse. Quia tenetur voluptate."], ["created_at", "2017-05-07 00:00:00"], ["updated_at", "2017-05-07 00:00:00"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mIdea Create (0.2ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "If you care about what other people think, you're never gonna do anything"], ["description", "Qui quaerat ea. Consequatur ullam ab. Alias nobis expedita."], ["created_at", "2017-12-03 00:00:00"], ["updated_at", "2017-12-03 00:00:00"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mIdea Create (0.2ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Ow, crap. I hate this. Running is terrible. Everything is the worst"], ["description", "Asperiores et doloribus. Rerum facere explicabo. Commodi inventore quis."], ["created_at", "2017-12-30 00:00:00"], ["updated_at", "2017-12-30 00:00:00"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mIdea Create (0.2ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Spaghetti or not, here I come"], ["description", "Quos est magni. Sit rerum pariatur. Voluptas consequatur non."], ["created_at", "2017-11-18 00:00:00"], ["updated_at", "2017-11-18 00:00:00"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mIdea Create (0.2ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Beer before liquor, never sicker, liquor before beer, never fear, don't do heroin"], ["description", "Voluptatem architecto itaque. Velit fugiat dolores. Ipsa unde adipisci."], ["created_at", "2018-08-19 00:00:00"], ["updated_at", "2018-08-19 00:00:00"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mIdea Create (0.2ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Beer before liquor, never sicker, liquor before beer, never fear, don't do heroin"], ["description", "Minus dolorem nulla. Amet quia id. Non culpa nisi."], ["created_at", "2017-05-04 00:00:00"], ["updated_at", "2017-05-04 00:00:00"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mIdea Create (0.2ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Dead on the inside, dead on the outside"], ["description", "Architecto qui doloribus. Earum quia quas. Alias qui voluptas."], ["created_at", "2019-02-05 00:00:00"], ["updated_at", "2019-02-05 00:00:00"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mIdea Create (0.2ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "For a lot of people, life is just one long, hard kick in the urethra"], ["description", "Aut facere atque. Sed voluptas commodi. Assumenda at dolores."], ["created_at", "2019-01-11 00:00:00"], ["updated_at", "2019-01-11 00:00:00"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mIdea Create (0.2ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "I need to go take a shower so I can't tell if I'm crying or not"], ["description", "Quis ratione eum. Et enim qui. Facilis tempora ipsum."], ["created_at", "2018-07-26 00:00:00"], ["updated_at", "2018-07-26 00:00:00"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mIdea Create (0.2ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Not understanding that you're a horrible person doesn't make you less of a horrible person"], ["description", "Quas laudantium atque. Et inventore non. Qui esse nisi."], ["created_at", "2017-11-26 00:00:00"], ["updated_at", "2017-11-26 00:00:00"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mIdea Create (0.2ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "It gets easier. But you have to do it every day, that's the hard part. But it does get easier"], ["description", "Iste voluptates molestiae. Molestiae quo magnam. Exercitationem ab iure."], ["created_at", "2017-10-19 00:00:00"], ["updated_at", "2017-10-19 00:00:00"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mIdea Create (0.2ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "I don't understand how people live. It's amazing to me that people wake up every morning and say: 'Yeah, another day, let's do it.' How do people do it? I don't know how"], ["description", "Officia et qui. Error veritatis fugiat. Sit repellat doloremque."], ["created_at", "2019-01-13 00:00:00"], ["updated_at", "2019-01-13 00:00:00"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mIdea Create (0.2ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "That's the problem with life, either you know what you want and you don't get what you want, or you get what you want and then you don't know what you want"], ["description", "Et tempora optio. Debitis necessitatibus nemo. Voluptatibus perferendis fuga."], ["created_at", "2018-03-24 00:00:00"], ["updated_at", "2018-03-24 00:00:00"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mIdea Create (0.2ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "For a lot of people, life is just one long, hard kick in the urethra"], ["description", "Beatae ut facilis. Quam commodi enim. Qui commodi ut."], ["created_at", "2017-10-21 00:00:00"], ["updated_at", "2017-10-21 00:00:00"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mIdea Create (0.2ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Not understanding that you're a horrible person doesn't make you less of a horrible person"], ["description", "Vitae ipsam iste. Nihil aliquid qui. Voluptatibus nobis ut."], ["created_at", "2018-04-19 00:00:00"], ["updated_at", "2018-04-19 00:00:00"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mIdea Create (0.2ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Ow, crap. I hate this. Running is terrible. Everything is the worst"], ["description", "Earum distinctio adipisci. Eaque voluptatem quia. Culpa sunt blanditiis."], ["created_at", "2017-03-12 00:00:00"], ["updated_at", "2017-03-12 00:00:00"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mIdea Create (0.2ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "I do love you, by the way. I mean as much as I'm capable of loving anyone"], ["description", "Esse similique dolore. Quam quidem eos. Vero totam soluta."], ["created_at", "2018-09-29 00:00:00"], ["updated_at", "2018-09-29 00:00:00"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mIdea Create (0.3ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "That's the problem with life, either you know what you want and you don't get what you want, or you get what you want and then you don't know what you want"], ["description", "Occaecati omnis illum. Et quisquam qui. Rerum qui labore."], ["created_at", "2018-06-12 00:00:00"], ["updated_at", "2018-06-12 00:00:00"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mIdea Create (0.1ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Not understanding that you're a horrible person doesn't make you less of a horrible person"], ["description", "Molestiae non nemo. Maxime sunt nostrum. Velit consequatur assumenda."], ["created_at", "2017-12-26 00:00:00"], ["updated_at", "2017-12-26 00:00:00"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mIdea Create (0.1ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "I need to go take a shower so I can't tell if I'm crying or not"], ["description", "Vel deleniti adipisci. Sint doloribus recusandae. Ipsum veritatis minus."], ["created_at", "2018-03-15 00:00:00"], ["updated_at", "2018-03-15 00:00:00"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mIdea Create (0.1ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "The universe is a cruel, uncaring void. The key to being happy isn't a search for meaning. It's to just keep yourself busy with unimportant nonsense, and eventually, you'll be dead"], ["description", "Repellat veniam ducimus. Consequatur et ducimus. Sit veritatis dolores."], ["created_at", "2017-06-26 00:00:00"], ["updated_at", "2017-06-26 00:00:00"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mIdea Create (0.2ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "It gets easier. But you have to do it every day, that's the hard part. But it does get easier"], ["description", "Et illo inventore. Culpa et aliquid. Et perspiciatis quasi."], ["created_at", "2018-09-02 00:00:00"], ["updated_at", "2018-09-02 00:00:00"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mIdea Create (0.1ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "I do love you, by the way. I mean as much as I'm capable of loving anyone"], ["description", "Laborum est dolor. Autem et minus. Expedita blanditiis possimus."], ["created_at", "2017-03-20 00:00:00"], ["updated_at", "2017-03-20 00:00:00"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mIdea Create (0.1ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "For a lot of people, life is just one long, hard kick in the urethra"], ["description", "Voluptas iusto consectetur. Facilis et amet. Alias commodi eveniet."], ["created_at", "2018-05-22 00:00:00"], ["updated_at", "2018-05-22 00:00:00"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mIdea Create (0.1ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "It gets easier. But you have to do it every day, that's the hard part. But it does get easier"], ["description", "Et illo quaerat. Vel voluptates cupiditate. Qui vel dicta."], ["created_at", "2018-03-25 00:00:00"], ["updated_at", "2018-03-25 00:00:00"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mIdea Create (0.1ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "I do love you, by the way. I mean as much as I'm capable of loving anyone"], ["description", "Nemo occaecati perferendis. Id modi ullam. Quia labore cumque."], ["created_at", "2017-05-08 00:00:00"], ["updated_at", "2017-05-08 00:00:00"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+Started GET "/ideas/1" for 127.0.0.1 at 2019-03-04 10:34:29 -0800
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering ideas/show.html.erb within layouts/application
+  Rendered ideas/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 20ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
