@@ -6,13 +6,8 @@ class SessionsController < ApplicationController
     user = User.find_by_email(params[:email])
     if user&.authenticate(params[:password])
       session[:user_id] = user.id
-      flash[:notice] = "You Are Now Logged In"
-      if session[:return_to].present?
-        redirect_to session.delete(:return_to)
-        flash[:notice] = "Logged In Successfully"
-      else
-        redirect_to root_path
-      end
+      flash[:notice] = "Logged In Successfully"
+      redirect_to root_path
     else
       flash[:warning] = "Wrong Email or Password"
       render :new
