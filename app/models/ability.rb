@@ -11,5 +11,6 @@ class Ability
     alias_action :create, :read, :update, :destroy, to: :crud
 
     can :crud, Idea, user_id: user.id
+    can :crud, Review, user_id: user.id
   end
 end

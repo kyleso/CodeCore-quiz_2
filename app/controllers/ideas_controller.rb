@@ -18,6 +18,8 @@ class IdeasController < ApplicationController
   end
 
   def show
+    @new_review = Review.new
+    @reviews = @idea.reviews.order(created_at: :desc)
   end
 
   def index
@@ -32,7 +34,7 @@ class IdeasController < ApplicationController
       flash[:success] = "Idea Updated Successfully!"
       redirect_to (idea_path(@idea))
     else
-      rnder :edit
+      render :edit
     end
   end
 

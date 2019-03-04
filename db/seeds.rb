@@ -1,5 +1,6 @@
 User.destroy_all
 Idea.destroy_all
+Review.destroy_all
 
 PASSWORD = "123"
 
@@ -25,4 +26,15 @@ users = User.all
     updated_at: created_at,
     user: users.sample,
   )
+
+  if idea.valid?
+    idea.reviews = rand(0..20).times.map do
+      Review.new(
+        body: Faker::GreekPhilosophers.quote,
+        created_at: created_at,
+        updated_at: created_at,
+        user: users.sample,
+      )
+    end
+  end
 end
