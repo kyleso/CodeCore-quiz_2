@@ -37,6 +37,7 @@ gem 'cancancan'
 gem 'jquery-rails'
 gem 'popper_js', '~> 1.14.5'
 gem 'bootstrap', '~> 4.3.1'
+gem 'font-awesome-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
