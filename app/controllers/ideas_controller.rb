@@ -38,6 +38,12 @@ class IdeasController < ApplicationController
     end
   end
 
+  def destroy
+    @idea.destroy
+    flash[:success] = "Your Idea Has Been Deleted!"
+    redirect_to ideas_path
+  end
+
   private
 
   def idea_params

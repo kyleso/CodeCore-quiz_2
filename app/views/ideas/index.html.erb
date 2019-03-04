@@ -2,8 +2,8 @@
 <% @ideas.each do |idea| %>
   <div class="jumbotron">
     <div class="container">
-      <h3><%= link_to idea.title, idea_path(idea.id), class: "text-info" %></h3>
-      <p class="lead"><%= idea.description %></p>
+      <h3><i class="fa fa-plus"></i>&nbsp&nbsp<%= link_to idea.title, idea_path(idea.id), class: "text-info" %></h3>
+      <p class="lead" style="display: none"><%= idea.description %></p>
       <hr class="my-4">
       <small class="text-muted">
         Posted by <span class="text-info"><%= idea.user&.name || '--deleted--' %></span>
