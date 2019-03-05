@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::Base
   include ApplicationHelper
+  before_action :set_idea
 
   private
 
@@ -23,5 +24,9 @@ class ApplicationController < ActionController::Base
       flash[:warning] = "You Must Sign In or Sign Up First"
       redirect_to new_session_path
     end
+  end
+
+  def set_idea
+    @idea = Idea.new
   end
 end
