@@ -1,0 +1,79 @@
+<div class="jumbo-box">
+  <div class="jumbotron">
+    <div class="container">
+      <h3 class="text-info"><%= @idea.title %></h3>
+      <p class="lead"><%= @idea.description %></p>
+      <hr class="my-4">
+      <small class="text-muted">
+        Posted by <span class="text-info"><%= @idea.user&.name || '--deleted--' %></span>
+        <%= time_ago_in_words(@idea.created_at) %> ago
+      </small>
+      <% if can? :crud, @idea %>
+        <div>
+          <%= link_to "Edit", edit_idea_path(@idea.id), class: "btn btn-outline-info" %>
+          <%= link_to "Delete", idea_path(@idea.id), method: :delete, class: "btn btn-outline-info", data: { confirm: "Are you sure you want to delete your idea?" } %>
+        </div>
+      <% end %>
+      <section>
+      <div class="review-box">
+        <h5 class="text-info">Reviews</h5>
+
+        <%= form_with(model: [@idea, @new_review], local: true) do |f| %>
+            <div class="form-group">
+              <% if @new_review.errors.present? %>
+                <p>
+                  <%= @new_review.errors.full_messages.join(', ') %>
+                </p>
+              <% end %>
+            </div>
+
+            <div class="form_group">
+              <%= f.text_area(
+                :body,
+                cols: 50,
+                rows: 4,
+                placeholder: "What's on your mind?",
+                class: "form-control"
+              ) %> 
+            </div>
+            <div class="review-button">
+              <%= f.submit "Submit", class: "btn btn-outline-info" %>
+            </div>
+          <% end %>
+          <div class="review-box">
+            <ul class="review-list">
+              <% @reviews.each do |review| %>
+                <li>
+                  <p>
+                    <%= review.body %> <br>
+                    <small class="text-muted">
+                      Reviewed by <span class="text-info"><%= review.user&.name || "--deleted--" %></span>  
+                      <%= time_ago_in_words(review.created_at) %> ago
+                    </small>
+                    <% if can?(:destroy, review)%>
+                      •
+                      <small>
+                        <%=
+                          link_to(
+                            "Delete",
+                            idea_review_path(@idea, review),
+                            method: :delete,
+                            data: {
+                              confirm: "Are you sure?"
+                            },
+                            class: "text-info"
+                          )
+                        %>
+                      </small>
+                    <% end %>
+                  </p>
+                </li>
+              <% end %>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+ 

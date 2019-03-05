@@ -1,0 +1,66 @@
+.nav-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-logo {
+  margin: 0;
+  padding: 0;
+  object-fit: contain;
+}
+
+.form-align {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 2em;
+}
+
+.form-spacer div {
+  margin: 1em;
+}
+
+.navspan {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.jumbo-box {
+  margin-top: 3em;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-bottom: 2em;
+}
+
+.alert-box {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.nav-btn-spacer {
+  margin-right: 1em;
+}
+
+.form-align {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 2em;
+}
+
+.review-box {
+  margin-top: 2em;
+}
+
+.review-button {
+  margin-top: 1em;
+}
+
+ul.review-list {
+  list-style: none;
+  padding-left: 0;
+}
