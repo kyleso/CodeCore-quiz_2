@@ -21,7 +21,7 @@ class ApplicationController < ActionController::Base
     unless user_signed_in?
       session[:return_to] ||= request.url
       flash[:warning] = "You Must Sign In or Sign Up First"
-      redirect_to root_path
+      redirect_to new_session_path
     end
   end
 end
